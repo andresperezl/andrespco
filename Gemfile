@@ -1,3 +1,4 @@
+ruby '2.1.3'
 source 'https://rubygems.org'
 
 
@@ -28,6 +29,7 @@ gem 'spring',        group: :development
 gem 'haml'
 gem 'foundation-rails'
 gem 'font-awesome-sass'
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
