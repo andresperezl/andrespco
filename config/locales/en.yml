@@ -1,0 +1,6 @@
+en:
+  hello: "Hello world"
+  titles:
+    profile: "Profile"
+  profile:
+    description: "Highly motivated by challenges, I'm always eager to learn new skills to find the optimal solution or approach to a problem. One of the advantages of being a software developer is that if I can't find the right tool I will create my own. "

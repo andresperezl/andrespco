@@ -1,0 +1,58 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.banner-img{
+	padding: 0;
+	max-height: 50rem;
+	overflow-y: hidden;
+}
+.banner{
+	max-width: 240rem;
+	box-shadow: 0 1px 3px #444;
+}
+
+.banner-content{
+	z-index: 2;
+	color: white !important;
+	h2{
+		color: white;
+	}
+}
+
+.panel{
+	box-shadow:
+		0px 3px 2px #C0C0C0, 
+		1px 0 1px #DDD, 
+		-1px 0 1px #DDD, 
+		0 -1px 1px #DDD
+}
+
+@media #{$small-up}{
+	.banner-content{
+		.banner-menu-button{
+			margin-top: -2.5rem;
+			a{
+				color: white;
+			}
+		}
+		.banner-name{
+			padding-left: 0;
+			margin-top: -3rem;
+			h2{
+				margin-bottom: 0;
+			}
+		}
+		.banner-avatar{
+			margin-left: 16.6667%;
+			margin-top: -4rem;
+			.th{
+				overflow-y: visible;
+			}
+		}
+	}
+	#phone-menu.reveal-modal{
+		width: 85vw;
+		height: 100vh;
+	}
+}

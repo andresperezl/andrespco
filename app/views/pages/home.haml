@@ -1,0 +1,21 @@
+- content_for :title, t(:profile, scope: [:titles])
+.row.banner
+  .small-12.columns.banner-img= image_tag 'banner.jpg'
+.row.banner-content
+  .small-2.columns.banner-menu-button.show-for-small-only
+    %a{ href: '#', role: 'button', 'data-reveal-id' => 'phone-menu' }
+      %i.fa.fa-bars.fa-2x
+  .small-4.columns.banner-avatar
+    %a.th.round= image_tag 'avatar.jpg'
+  .small-6.columns.banner-name
+    %h2.small-only-text-left Andres Perez
+.row
+  .small-12.columns
+    .panel
+      %p.text-center
+        %em
+          %i.fa.fa-quote-left
+          =t :description, scope: [:profile]
+          %i.fa.fa-quote-right
+.reveal-modal.xlarge#phone-menu{ 'data-reveal' => '', 'data-reveal-animation' => 'fade' }
+  %p Esto es una prueba
