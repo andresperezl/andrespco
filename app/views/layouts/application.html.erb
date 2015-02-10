@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="theme-color" content="<%= content_for?(:bar_color) ? yield(:bar_color) : "#542FAD" %>" />
     <title><%= yield(:title) + " | " if content_for?(:title) %> AndresP.co</title>
 
     <%= stylesheet_link_tag    "application" %>
