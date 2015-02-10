@@ -7,49 +7,57 @@
 	max-height: 50rem;
 	overflow-y: hidden;
 }
+.fullwidth{
+	padding: 0;
+	.row{
+		padding: 0 !important;
+	}
+}
 .banner{
 	max-width: 240rem;
 	box-shadow: 0 1px 3px #444;
+	background-color: #542FAD;
+	background-image: image_url("banner.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
 }
-
-.banner-content{
-	z-index: 2;
-	color: white !important;
-	h2{
-		color: white;
-	}
+.card{
+	padding-left: 0.45rem;
+	padding-right: 0.45rem;
 }
-
 .panel{
+	margin-top: 1rem;
 	box-shadow:
 		0px 3px 2px #C0C0C0, 
 		1px 0 1px #DDD, 
 		-1px 0 1px #DDD, 
-		0 -1px 1px #DDD
+		0 -1px 1px #DDD;
 }
 
 @media #{$small-up}{
-	.banner-content{
+	.banner{
+		height: 10rem;
+		padding: 0.3rem;
 		.banner-menu-button{
-			margin-top: -2.5rem;
+			margin-top: -0.2rem;
 			a{
 				color: white;
 			}
 		}
 		.banner-name{
-			padding-left: 0;
-			margin-top: -3rem;
 			h2{
-				margin-bottom: 0;
+				margin: 0;
+				margin-top: -0.45rem;
+				color: white;
 				text-shadow: 1px 1px 1px #BBB;
 			}
 		}
 		.banner-avatar{
-			margin-left: 16.6667%;
-			margin-top: -4rem;
-			.th{
-				overflow-y: visible;
-			}
+			margin-top: 0.5rem;
+		}
+		.row{
+			margin-top: 0.7rem;
 		}
 	}
 	#phone-menu.reveal-modal{
