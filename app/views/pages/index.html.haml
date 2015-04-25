@@ -1,0 +1,124 @@
+.row
+  .alert.alert-warning.alert-dismissable.text-center
+    %button.close(data-dismiss="alert")
+      %span &times;
+    %strong
+      Work in Progress
+    This website is currently a work in progress, due to school reasons I havn't had the time to finish it. If you are interested and would like more information, please send me an email!
+  .col-md-6.col-md-offset-3
+    .card
+      .card-title
+        %h1 Personal Info
+      .card-content
+        %dl.dl-horizontal
+          %dt First Name
+          %dd Andres
+          %dt Last Name
+          %dd Perez
+          %dt Age
+          %dd="#{time_ago_in_words("1991-10-25".to_date)} old"
+          %dt Nationality
+          %dd Venezuelan
+          %dt Current city
+          %dd Tampa, FL
+          %dt Email
+          %dd
+            me
+            %em at
+            andresp
+            %em dot
+            co
+          %dt Current Job
+          %dd TA & RA @ USF
+          %dt Status
+          %dd Looking for Job opportunities
+
+.row
+  .col-md-6.col-md-offset-3
+    .card
+      .card-title
+        %h1 Education
+      .card-content
+        %ul
+          %li
+            %strong
+              Bachelor degrees:
+            %ul
+              %li 
+                System Engineering -
+                %em
+                  Universidad del Norte
+                  %small Barranquilla - Colombia
+              %li 
+                Computer Science -
+                %em
+                  University of South Florida
+                  %small Tampa, FL
+          %li
+            %strong
+              Masters degree:
+            %ul
+              %li 
+                Computer Science -
+                %em
+                  University of South Florida
+                  %small Tampa, FL (In progress)
+.row
+  .col-md-8.col-md-offset-2
+    .card
+      .card-title
+        %h1 Skills
+      .card-content
+        .row.two-cols
+          .col-sm-12.col-md-6.left-col
+            %dl.dl-horizontal
+              %dt Java/Android
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active.progress-bar-success(role="pogressbar" style="width: 100%;")
+              %dt HTML5/JS/CSS3
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active(role="pogressbar" style="width: 80%;")
+              %dt Linux
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active(role="pogressbar" style="width: 70%;")
+              %dt C/C++/C#
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active.progress-bar-warning(role="pogressbar" style="width: 50%;")
+          .col-sm-12.col-md-6.right-col
+            %dl.dl-horizontal
+              %dt Ruby/Ruby on Rails
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active.progress-bar-success(role="pogressbar" style="width: 90%;")
+              %dt PostgreSQL
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active(role="pogressbar" style="width: 75%;")
+              %dt Windows
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active(role="pogressbar" style="width: 70%;")
+              %dt Python
+              %dd
+                .progress
+                  .progress-bar.progress-bar-striped.active.progress-bar-warning(role="pogressbar" style="width: 50%;")
+.row
+  .col-md-8.col-md-offset-2
+    .card
+      .card-title
+        %h1 Social Networks
+      .card-content
+        .btn-group.btn-group-justified
+          .btn-group
+            %a.btn.btn-default.btn-lg(href="https://github.com/andresperezl")
+              = fa_icon "github", text: "andresperezl"
+          .btn-group
+            %a.btn.btn-default.btn-lg(href="https://www.linkedin.com/pub/andr%C3%A9s-p%C3%A9rez/60/385/612")
+              = fa_icon "linkedin", text: "Andres Perez"
+          .btn-group
+            %a.btn.btn-default.btn-lg(href="https://twitter.com/andresperezl")
+              = fa_icon "twitter", text: "@andresperezl"
