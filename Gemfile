@@ -12,6 +12,7 @@ gem 'haml'
 gem 'bootstrap-sass'
 gem 'jquery-ui-rails'
 gem 'font-awesome-rails'
+gem 'pg'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'html2haml'
